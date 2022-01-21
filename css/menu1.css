@@ -1,0 +1,64 @@
+#dasik-grid {
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  background-color: rgb(240, 224, 255);
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  border-bottom: 1px solid black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0;
+  background-color: antiquewhite;
+}
+
+h1 > a {
+  color: rgb(124, 26, 124);
+  text-shadow: 4px 4px 4px rgb(118, 118, 118);
+  text-decoration: none;
+}
+a {
+  color: rgb(118, 118, 118);
+  text-decoration: none;
+}
+li {
+  padding: 20px;
+}
+.menu {
+  width: 200px;
+
+  font-size: 35px;
+  margin: 0;
+  padding-right: 15px;
+  padding-top: 20px;
+
+  color: rgb(118, 118, 118);
+  list-style-type: circle;
+}
+#menugrid {
+  border-right: 1px solid black;
+}
+.eat {
+}
+.wind {
+  padding-top: 10px;
+}
+.content {
+  font-size: 35px;
+  padding-top: 0px;
+  margin-left: 50px;
+}
+.dasik-content {
+  margin-top: 30px;
+}
+#dasik-img1 {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+#dasik-subcontent {
+  font-size: 25px;
+}
