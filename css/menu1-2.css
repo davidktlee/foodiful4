@@ -15,7 +15,7 @@ h1 {
   background-color: antiquewhite;
 }
 
-h1>a {
+h1 > a {
   color: rgb(124, 26, 124);
   text-shadow: 4px 4px 4px rgb(118, 118, 118);
   text-decoration: none;
@@ -24,18 +24,17 @@ a {
   color: rgb(118, 118, 118);
   text-decoration: none;
 }
-li{
-  padding:20px;
+li {
+  padding: 20px;
 }
 .menu {
-
   width: 200px;
-  
+
   font-size: 35px;
   margin: 0;
   padding-right: 15px;
   padding-top: 20px;
-  
+
   color: rgb(118, 118, 118);
   list-style-type: circle;
 }
@@ -43,20 +42,19 @@ li{
   border-right: 1px solid black;
 }
 
-.wind{
-padding-top: 10px;
+.wind {
+  padding-top: 10px;
 }
 .content {
   font-size: 45px;
   padding-top: 0px;
   margin-left: 50px;
 }
-.windcake-subcontent{
-  font-size: 30px
+.windcake-subcontent {
+  font-size: 30px;
 }
 
-
-#wind-img1{
+#wind-img1 {
   margin-right: 100px;
   margin-left: 100px;
 }

@@ -19,6 +19,7 @@ h1 {
 }
 h1 > a {
   color: rgb(124, 26, 124);
+  text-shadow: 4px 4px 4px rgb(118, 118, 118);
   text-decoration: none;
 }
 a {
@@ -48,7 +49,7 @@ ul {
   padding-left: 30px;
   padding-top: 15px;
 }
-#order {
+.order {
   font-size: 35px;
   text-align: center;
 }
