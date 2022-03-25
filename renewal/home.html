@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Foodiful</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+
+  <body>
+    <header class="header">
+      <h1><a href=" index.html">
+          푸디풀
+        </a></h1>
+    </header>
+    <main class="home">
+      <aside class="sidebar">
+        <nav class="sidebar__nav">
+          <ul class="sidebar__nav-item-list">
+            <li class="sidebar__nav-item home on" onclick="setMenu('home')">
+              <button class="border-none transparent">
+                <span>메뉴</span>
+              </button>
+              <ul>다식</ul>
+              <ul>바람떡</ul>
+              <ul>떡케이크</ul>
+            </li>
+            <li>
+              <a href="menu2.html" title="Q&A 안내">
+                Q&A
+              </a>
+            </li>
+            <li> <a href="menu3.html" title="떡케이크 안내">
+                주문방법
+              </a></li>
+            <a href="https://www.google.com/maps/place/%ED%91%B8%EB%94%94%ED%92%80/@35.1508631,129.1110309,17z/data=!3m1!4b1!4m5!3m4!1s0x3568ed33cc098c31:0xf912ad2eaab2bbc0!8m2!3d35.1508631!4d129.1132196?hl=ko" target="_blank"
+              title="foodifulmap"><span id="map">→오시는길</span></a>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="content">
+        <section id="home">
+          <p><strong>Food + Beautiful</strong> 음식의 아름다움을 추구하는</p>
+          <p>푸디풀 Foodiful 홈페이지에 오신것을 환영합니다</p>
+          <img src="foodifuljpg/foodiful-logo.jpg" alt="foodiful로고" width="300px" height="300px" />
+          <p class="sns">푸디풀에 대하여 <img src="foodifuljpg/inpock.jfif" alt="inpock" width="50px" height="50px" /> <a href="https://link.inpock.co.kr/foodiful" target="_blank">궁금하시면 이곳을 눌러주세요</a></p>
+        </section>
+        <section class="menu">
+          <aside class="menu__sidebar">
+            <nav class="menu__sidebar__nav">
+              <ul class="menu__sidebar__nav-item-list">
+                <li class="menu__sidebar__nav-item-list dasik on">
+                  <button class="border-none transparent">
+                    <span>다식</span>
+                  </button>
+                </li>
+                <li class="menu__sidebar__nav-item-list baram on">
+                  <button class="border-none transparent">
+                    <span>바람떡</span>
+                  </button>
+                </li>
+                <li class="menu__sidebar__nav-item-list cake on">
+                  <button class="border-none transparent">
+                    <span>떡케이크</span>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+        </section>
+        <section id="qna">
+
+        </section>
+        <section id="order">
+
+        </section>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+  </head>
+
+</html>
