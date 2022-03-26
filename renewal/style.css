@@ -1,13 +1,5 @@
-#grid {
-  border: 2px solid black;
-  display: grid;
-  grid-template-columns: 0.1fr 1fr;
-  background-color: rgb(240, 224, 255);
-}
-
 h1 {
   text-align: center;
-  font-size: 50px;
   border-bottom: 1px solid black;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -19,48 +11,85 @@ h1 > a {
   color: rgb(124, 26, 124);
   text-shadow: 4px 4px 4px rgb(118, 118, 118);
   text-decoration: none;
+  font-size: 40px;
+}
+
+.home,
+.dasik,
+.baram,
+.cake {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  background-color: rgb(240, 224, 255);
+}
+.home,
+.dasik,
+.baram,
+.cake li {
+  list-style-type: disc;
+}
+.sidebar {
+  border-right: 1px solid black;
+}
+button {
+  cursor: pointer;
+}
+.border-none {
+  border: none;
+}
+.transparent {
+  background: transparent;
+}
+.sidebar__nav-item.on {
+  background-color: #c158dc;
+}
+
+.sidebar__nav-item:hover {
+  background-color: #e1bee7;
+}
+
+.sidebar__nav-item button {
+  height: 48px;
+  width: 150px;
+}
+.sidebar__nav-item button span {
+  margin-right: 4px;
+  padding: 0px;
+  font-size: 25px;
+}
+.home #home {
+  display: block;
+}
+.dasik #dasik {
+  display: block;
+}
+.baram #baram {
+  display: block;
+}
+.cake #cake {
+  display: block;
+}
+#home {
+  display: none;
+}
+#dasik {
+  display: none;
+}
+#baram {
+  display: none;
+}
+#cake {
+  display: none;
+}
+
+.content {
+  font-size: 25px;
+  margin: 8px 0;
+  padding-bottom: 20px;
+  margin-left: 20px;
 }
 
 a {
-  color: rgb(124, 26, 124);
-  text-decoration: none;
-}
-
-#menugrid {
-  border-right: 1px solid black;
-}
-
-.menu {
-  width: 200px;
-
-  font-size: 35px;
-  margin: 0;
-  padding-right: 15px;
-  padding-top: 20px;
-
-  color: rgb(118, 118, 118);
-  list-style-type: circle;
-}
-
-li {
-  padding: 20px;
-}
-#click {
-  font-size: 20px;
-  margin-top: 200px;
-}
-
-ul > span {
   font-size: 30px;
-  justify-content: flex-start;
-  padding-top: 20px;
-}
-
-#content {
-  font-size: 25px;
-}
-
-#map {
-  font-size: 30px;
-  justify-content: flex-start;
+  justify-content: flex-left;
 }

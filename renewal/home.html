@@ -7,11 +7,15 @@
     <link rel="stylesheet" href="style.css" />
 
   <body>
-    <header class="header">
-      <h1><a href=" index.html">
-          푸디풀
-        </a></h1>
+    <!-- 헤더-->
+    <header>
+      <div class="header">
+        <h1><a href=" index.html">
+            푸디풀
+          </a></h1>
+      </div>
     </header>
+    <!-- 메인 -->
     <main class="home">
       <aside class="sidebar">
         <nav class="sidebar__nav">
@@ -20,63 +24,95 @@
               <button class="border-none transparent">
                 <span>메뉴</span>
               </button>
-              <ul>다식</ul>
-              <ul>바람떡</ul>
-              <ul>떡케이크</ul>
             </li>
-            <li>
-              <a href="menu2.html" title="Q&A 안내">
-                Q&A
-              </a>
+            <li class="sidebar__nav-item dasik " onclick="setMenu('dasik')">
+              <button class="border-none transparent">
+                <span>다식</span>
+              </button>
             </li>
-            <li> <a href="menu3.html" title="떡케이크 안내">
-                주문방법
-              </a></li>
+            <li class="sidebar__nav-item baram  " onclick="setMenu('baram')">
+              <button class="border-none transparent">
+                <span>바람떡</span>
+              </button>
+            </li>
+            <li class="sidebar__nav-item cake " onclick="setMenu('cake')">
+              <button class="border-none transparent">
+                <span>떡 케이크</span>
+              </button>
+            </li>
             <a href="https://www.google.com/maps/place/%ED%91%B8%EB%94%94%ED%92%80/@35.1508631,129.1110309,17z/data=!3m1!4b1!4m5!3m4!1s0x3568ed33cc098c31:0xf912ad2eaab2bbc0!8m2!3d35.1508631!4d129.1132196?hl=ko" target="_blank"
-              title="foodifulmap"><span id="map">→오시는길</span></a>
+              title="foodifulmap"><span>→오시는길</span></a>
+
           </ul>
         </nav>
       </aside>
 
       <div class="content">
         <section id="home">
-          <p><strong>Food + Beautiful</strong> 음식의 아름다움을 추구하는</p>
-          <p>푸디풀 Foodiful 홈페이지에 오신것을 환영합니다</p>
-          <img src="foodifuljpg/foodiful-logo.jpg" alt="foodiful로고" width="300px" height="300px" />
-          <p class="sns">푸디풀에 대하여 <img src="foodifuljpg/inpock.jfif" alt="inpock" width="50px" height="50px" /> <a href="https://link.inpock.co.kr/foodiful" target="_blank">궁금하시면 이곳을 눌러주세요</a></p>
+          <h2><strong>Food + Beautiful</strong> 음식의 아름다움을 추구하는
+            <p>푸디풀 Foodiful 홈페이지에 오신것을 환영합니다</p>
+            <img src="../foodifuljpg/foodiful-logo.jpg" alt="foodiful로고" width="300px" height="300px" />
+            <p class="sns">푸디풀에 대하여 <img src="../foodifuljpg/inpock.jfif" alt="inpock" width="50px" height="50px" /> <a href="https://link.inpock.co.kr/foodiful" target="_blank">궁금하시면 이곳을 눌러주세요</a></p>
+          </h2>
         </section>
-        <section class="menu">
-          <aside class="menu__sidebar">
-            <nav class="menu__sidebar__nav">
-              <ul class="menu__sidebar__nav-item-list">
-                <li class="menu__sidebar__nav-item-list dasik on">
-                  <button class="border-none transparent">
-                    <span>다식</span>
-                  </button>
-                </li>
-                <li class="menu__sidebar__nav-item-list baram on">
-                  <button class="border-none transparent">
-                    <span>바람떡</span>
-                  </button>
-                </li>
-                <li class="menu__sidebar__nav-item-list cake on">
-                  <button class="border-none transparent">
-                    <span>떡케이크</span>
-                  </button>
-                </li>
-              </ul>
-            </nav>
-          </aside>
-        </section>
-        <section id="qna">
+
+        <section id="dasik">
+
+          <p id="dasik-content">천연 색소를 이용해 알록달록 물들인
+            <strong>"흑임자 꽃다식"</strong>
+          <div id="dasik-subcontent">예쁘고 맛도 좋은 흑임자 꽃다식은
+            차랑도 잘 어울리지만 와인과도 잘 어울리는 디저트랍니다.
+            <br />입안에 가득 퍼지는 고소함 가득한 흑임자 꽃다식은
+            건강하기까지한 디저트라 <br />남녀노소 부담없이 드실 수 있는 디저트에요!
+
+          </div>
+          </p>
+          <img id="dasik-img1" src="../foodifuljpg/dasik10pieces.jpg" alt="다식이미지" width="450px" height="450px" />
+          <img id="dasik-img2" src="../foodifuljpg/dasik20pieces.jpg" alt="다식이미지" width="450px" height="450px" />
+          <p class="eat">먹는방법</p>
+          <p class="eatcontent2">따듯한 차와 함께 먹는다</p>
 
         </section>
-        <section id="order">
+
+        <section id="baram">
+
+          <p id="windcake-content">천연 색소를 이용해 무지개 색으로 물들인
+            <strong>"무지개 바람떡"</strong>
+          </p>
+          <div class="windcake-subcontent">
+            무지개 바람떡은 색도 예쁘지만 쫄깃쫄깃하고 달콤해서 맛도 너무너무 좋답니다💜
+            <br>무지개 바람떡도 예쁜 보자기 포장을
+            기본으로 해드리니 선물하기에도 너무너무 좋겠죠?
+          </div>
+          <img id="wind-img1" src="../foodifuljpg/windcake.jpg" alt="바람떡이미지" width="450px" height="450px" />
+          <img id="wind-img2" src="../foodifuljpg/windbojagi.jpg" alt="바람떡보자기이미지" width="450px" height="450px" />
+          <p class="eat">먹는방법</p>
+          <p class="eatcontent2">따듯한 차와 함께 먹는다</p>
+
+        </section>
+        <section id="cake">
+
+          <p>천연 색소를 이용해 무지개 색으로 물들인
+            <strong>"떡 케이크"</strong>
+          </p>
+          <p class="ricecake-subcontent">
+            무지개바람떡은 색도 예쁘지만 쫄깃쫄깃하고 달콤해서 맛도 너무너무 좋답니다💜
+            <br>무지개 바람떡도 예쁜 보자기 포장을
+            기본으로 해드리니 선물하기에도 너무너무 좋겠죠?
+          </p>
+          <img id="ricecake-img1" src="../foodifuljpg/injeolmicake.jpg" alt="인절미케이크이미지" width="450px" height="450px" />
+          <img id="ricecake-img2" src="../foodifuljpg/strawcake.jpg" alt="딸기케이크이미지" width="450px" height="450px" />
+          <p class="eat">먹는방법</p>
+          <p class="eatcontent2">따듯한 차와 함께 먹는다</p>
 
         </section>
       </div>
     </main>
-    <script src="app.js"></script>
+    <!-- 푸터 -->
+    <footer>
+      푸터
+    </footer>
+    <script src="script.js"></script>
   </body>
   </head>
 
